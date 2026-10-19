@@ -1,0 +1,52 @@
+[project]
+name = "local-support-agent"
+version = "0.1.0"
+description = "LiveKit voice assistant with general knowledge-base retrieval"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.34,<1",
+  "pydantic-settings>=2.8,<3",
+  "httpx>=0.28,<1",
+  "aiohttp>=3.10,<4",
+  "jieba==0.42.1",
+  "livekit-agents[openai,silero]==1.8.7",
+  "python-multipart>=0.0.20,<1",
+  "PyJWT>=2.10,<3",
+  "pypdf>=6,<7",
+  "python-docx>=1.2,<2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.3,<10", "pytest-asyncio>=0.25,<2", "ruff>=0.11,<1"]
+local-asr = ["sherpa-onnx>=1.12,<2"]
+tts = [
+  "kokoro==0.9.4",
+  "misaki[zh]==0.9.4",
+  "torch==2.8.0",
+  "transformers>=4.51,<4.58",
+  "soundfile>=0.13,<1",
+]
+
+[tool.uv]
+default-groups = ["dev", "tts", "local-asr"]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu128", marker = "sys_platform == 'win32' or sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]

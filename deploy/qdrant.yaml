@@ -1,0 +1,14 @@
+log_level: WARN
+telemetry_disabled: true
+storage:
+  storage_path: /var/lib/support-agent/qdrant/storage
+  snapshots_path: /var/lib/support-agent/qdrant/snapshots
+  performance:
+    max_search_threads: 1
+  optimizers:
+    default_segment_number: 1
+service:
+  host: 127.0.0.1
+  http_port: 6333
+  grpc_port: 6334
+  max_workers: 2

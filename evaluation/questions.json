@@ -1,0 +1,22 @@
+[
+  {"question":"R100如何恢复出厂设置？", "heading":"R100 恢复出厂设置", "keywords":["8","八"]},
+  {"question":"R200如何恢复出厂设置？", "heading":"R200 恢复出厂设置", "keywords":["10","十"]},
+  {"question":"R100橙色指示灯常亮怎么办？", "heading":"R100 橙色指示灯常亮", "keywords":["WAN","网线"]},
+  {"question":"R200橙色指示灯闪烁代表什么？", "heading":"R200 橙色与红色指示灯", "keywords":["配对","Mesh"]},
+  {"question":"R100红色指示灯常亮怎么办？", "heading":"R100 指示灯其他状态", "keywords":["异常","三十","30"]},
+  {"question":"R100忘记管理员密码怎么办？", "heading":"忘记管理员密码", "keywords":["恢复","出厂"]},
+  {"question":"R100怎么修改Wi-Fi密码？", "heading":"修改 Wi-Fi 密码", "keywords":["无线设置"]},
+  {"question":"R100首次安装怎么接线？", "heading":"R100 首次安装", "keywords":["WAN","蓝色"]},
+  {"question":"R200有线Mesh如何组网？", "heading":"R200 信号与 Mesh", "keywords":["LAN","WAN"]},
+  {"question":"R100支持插SIM卡上网吗？", "heading":"R100 产品定位与接口", "keywords":["不支持","不能"]},
+  {"question":"R100与R200支持混合Mesh组网吗？", "heading":"R200 产品定位与接口", "keywords":["不支持","不能"]},
+  {"question":"R100怎么升级固件？", "heading":"R100 和 R200 固件升级", "keywords":["固件升级","检查更新"]},
+  {"question":"R100普通重启会清除配置吗？", "heading":"R100 和 R200 备份与重启", "keywords":["不清除","不会"]},
+  {"question":"R100保修多久？", "heading":"保修期限", "keywords":["十二","12"]},
+  {"question":"R200信号不好怎么摆放或组网？", "heading":"R200 信号与 Mesh", "keywords":["Mesh","有线","组网"]},
+  {"question":"R100宽带拨号错误691怎么办？", "heading":"宽带账号与联网失败", "keywords":["账号","密码"]},
+  {"question":"那怎么重置？", "history":["我使用R100，橙色灯一直亮"], "heading":"R100 恢复出厂设置", "keywords":["八","8"]},
+  {"question":"灯一直亮怎么办？", "expect":"clarify"},
+  {"question":"R100咖啡研磨刀盘参数是什么？", "expect":"unknown"},
+  {"question":"R200支持卫星联网吗？", "expect":"unknown"}
+]

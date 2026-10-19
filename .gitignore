@@ -1,0 +1,48 @@
+# Credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+.codex/
+deploy/livekit.yaml
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Python environments, bytecode and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Runtime data, downloaded services/models and local databases
+runtime/
+tools/
+.qdrant-initialized
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+*.onnx
+*.safetensors
+*.pt
+*.pth
+
+# Frontend dependencies and generated output (keep dependency lockfiles)
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Logs and generated evaluation reports
+*.log
+evaluation/results.json
+evaluation/results.md
+.DS_Store
+Thumbs.db
