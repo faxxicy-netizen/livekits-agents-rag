@@ -2,6 +2,8 @@
 
 支持本地运行与服务器部署。部署方式和维护命令见 [服务器部署与维护](docs/服务器部署与维护.md)。
 
+项目逻辑和 LiveKit RAG 接入见 [项目架构与 RAG 链路](docs/项目架构与RAG链路.md)。
+
 基于 LiveKit Agents 的知识库语音助手。浏览器通过本机 LiveKit Server 传输 WebRTC 音频，当前演示配置使用阿里云百炼流式中文 ASR/TTS，保留 SenseVoice CPU 识别和 Kokoro GPU 合成作为可选本地方案。LLM 默认使用 **DeepSeek `deepseek-flash`，关闭思考**。
 
 ## 启动
